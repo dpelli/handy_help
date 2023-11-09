@@ -1,13 +1,17 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from django.contrib import messages
 from .models import User, Job
 import bcrypt
-from datetime import datetime, date
-import time
+from datetime import datetime
 
 
 def index(request):
     return render(request, "index.html")
+
+
+def health_check(request):
+    return HttpResponse(status=200)
 
 
 def register(request):
