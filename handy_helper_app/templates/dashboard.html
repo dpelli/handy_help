@@ -49,10 +49,10 @@
                             <td>{{job.title}}</td>
                             <td>{{job.location}}</td>
                             <td class="text-center">
-                                <a class="btn btn-success" href="/jobs/{{job.id}}">View</a>
-                                <a class="btn btn-success" href="/jobs/{{job.id}}/edit">Edit</a>
-                                <a class="btn btn-success" href="/jobs/{{job.id}}/destroy">Remove</a>
-                                <a class="btn btn-success" href="/jobs/{{job.id}}/add">Assign to Me</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}">View</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}/edit">Edit</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}/destroy">Remove</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}/add">Assign to Me</a>
                             </td>
                         </tr>
                     {% else %}
@@ -60,8 +60,8 @@
                             <td>{{job.title}}</td>
                             <td>{{job.location}}</td>
                             <td class="text-center">
-                                <a class="btn btn-success" href="/jobs/{{job.id}}">View</a>
-                                <a class="btn btn-success" href="/jobs/{{job.id}}/add">Add</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}">View</a>
+                                <a class="btn btn-success m-1" href="/jobs/{{job.id}}/add">Add</a>
                             </td>
                         </tr>
                     {% endif %}
@@ -83,9 +83,9 @@
                         <td>{{job.title}}</td>
                         <td>{{job.location}}</td>
                         <td class="text-center">
-                            <a class="btn btn-success" href="/jobs/{{job.id}}">View</a>
-                            <a class="btn btn-success" href="/jobs/{{job.id}}/destroy">Done</a>
-                            <a class="btn btn-success" href="/jobs/{{job.id}}/release">Unassign</a>
+                            <a class="btn btn-success m-1" href="/jobs/{{job.id}}">View</a>
+                            <a class="btn btn-success m-1" href="/jobs/{{job.id}}/destroy">Done</a>
+                            <a class="btn btn-success m-1" href="/jobs/{{job.id}}/release">Unassign</a>
                         </td>
                     </tr>
                 {% endif %}
