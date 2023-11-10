@@ -10,10 +10,6 @@ def index(request):
     return render(request, "index.html")
 
 
-def health_check(request):
-    return HttpResponse(status=200)
-
-
 def register(request):
     if request.method == "POST":
         errors = User.objects.register_validator(request.POST)
